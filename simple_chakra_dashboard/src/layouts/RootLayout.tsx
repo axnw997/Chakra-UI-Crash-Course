@@ -1,10 +1,23 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { Grid, GridItem } from "@chakra-ui/react";
 export const RootLayout = () => {
   return (
-    <div>
-      <Navbar />
-      <Outlet />
-    </div>
+    <Grid templateColumns={"repeat(6, 1fr)"} bg="gray.50">
+      <GridItem
+      colSpan={1}
+      bg="purple.400"
+      minHeight="100vh"
+      p="30px"
+      >
+        <span>Sidebar</span>
+      </GridItem>
+      <GridItem colSpan={5}
+      p="40px"
+      >
+        <Navbar />
+        <Outlet />
+      </GridItem>
+    </Grid>
   );
 };
