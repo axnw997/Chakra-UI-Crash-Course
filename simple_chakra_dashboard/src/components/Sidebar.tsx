@@ -4,17 +4,33 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <List color={"white"} fontSize="1.2em" spacing={4}>
-      <ListItem>
-        <HamburgerIcon mr="10px" boxSize={6}></HamburgerIcon>
+    <List
+      color={"white"}
+      fontSize="1.2em"
+      spacing={{
+        base: 4,
+        sm: 0,
+        md:0,
+        lg:4
+      }}
+      display={"flex"}
+      flexDirection={{
+        base: "column",
+        sm: "row",
+        md: "row",
+        lg: "column"
+      }}
+    >
+      <ListItem mr="10px">
+        <HamburgerIcon mr={"5px"} boxSize={6}></HamburgerIcon>
         <NavLink to="/">Dashboard</NavLink>
       </ListItem>
-      <ListItem>
-        <ListIcon as={EditIcon} mr={"10px"} boxSize={6}></ListIcon>
+      <ListItem mr="10px">
+        <ListIcon as={EditIcon} mr={"5px"} boxSize={6}></ListIcon>
         <NavLink to="/create">New Task</NavLink>
       </ListItem>
-      <ListItem>
-        <ListIcon as={AtSignIcon} mr={"10px"} boxSize={6}/>
+      <ListItem mr="10px">
+        <ListIcon as={AtSignIcon} mr={"5px"} boxSize={6} />
         <NavLink to="/profile">Profile</NavLink>
       </ListItem>
     </List>
