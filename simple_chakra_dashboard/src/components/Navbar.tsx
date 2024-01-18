@@ -2,7 +2,6 @@ import { UnlockIcon } from "@chakra-ui/icons";
 import {
   Avatar,
   AvatarBadge,
-  Box,
   Button,
   Flex,
   HStack,
@@ -42,13 +41,10 @@ const Navbar = () => {
         <Wrap>
           <WrapItem>
             <Avatar size="md" name="mario" src="./public/img/mario.png">
-              <AvatarBadge
-                bg="green"
-                boxSize="25px"
-                fontSize="15px"
-                color={"white"}
-              >
-                3
+              <AvatarBadge bg="teal.500" boxSize="25px">
+                <Text fontSize="sm" color={"white"}>
+                  3
+                </Text>
               </AvatarBadge>
             </Avatar>
           </WrapItem>

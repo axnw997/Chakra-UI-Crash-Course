@@ -7,7 +7,7 @@ export const RootLayout = () => {
     <Grid templateColumns={"repeat(6, 1fr)"} bg="gray.50">
       <GridItem
       colSpan={{base:6, lg:2, xl:1}}
-      bg="purple.400"
+      bg="brand.950"
       minHeight={{lg:"100vh"}}
       p="30px"
       >
