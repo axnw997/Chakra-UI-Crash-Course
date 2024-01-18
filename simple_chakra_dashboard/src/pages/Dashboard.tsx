@@ -11,6 +11,7 @@ import {
   Text,
   HStack,
   Divider,
+  Avatar,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -45,7 +46,7 @@ const Dashboard = () => {
             <CardHeader>
               <Flex gap={10}>
                 <Box w="50px" h="50px">
-                  AV
+                  <Avatar src={card.img} size="lg"/>
                 </Box>
                 <Box>
                   <Heading as="h3" size="sm">
