@@ -40,7 +40,7 @@ const Navbar = () => {
       <HStack spacing="10px">
         <Wrap>
           <WrapItem>
-            <Avatar size="md" name="mario" src="./public/img/mario.png">
+            <Avatar size="md" name="mario" src="/img/mario.png">
               <AvatarBadge bg="teal.500" boxSize="25px">
                 <Text fontSize="sm" color={"white"}>
                   3
